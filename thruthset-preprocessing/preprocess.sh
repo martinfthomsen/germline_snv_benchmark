@@ -55,8 +55,8 @@ for bed in ${IN_BED_1} ${IN_BED_2} ${IN_BED_3}; do
     zcat "${bed}" \
         | awk 'BEGIN{OFS="\t"} $1 ~ /^chr([1-9]|1[0-9]|2[0-2]|X)$/ {print $1,$2,$3}' \
         | sort -k1,1V -k2,2n -k3,3n \
-        | bgzip -c > "${CLEAN_BEDS}/${name}.chr1-22andX.sorted.bed.gz"
-    tabix -f -p bed "${CLEAN_BEDS}/${name}.chr1-22andX.sorted.bed.gz"
+        | bgzip -c > "${PREPROCESSED_BEDS}/${name}.chr1-22andX.sorted.bed.gz"
+    tabix -f -p bed "${PREPROCESSED_BEDS}/${name}.chr1-22andX.sorted.bed.gz"
 done
 
 # Step 2 - Split + normalize each sample truth from family VCF
@@ -87,7 +87,7 @@ for v in $(ls -1 ${INDIVIDUAL_TSS}/NA?????.vcf.gz ${INDIVIDUAL_TSS_NOPRIV}/NA???
     dir=$(dirname $v)
     name=$(basename ${v} | cut -f1 -d .)
     for b in "encode_blacklist_v2" "ucsc_unusual_regions"; do
-        bcftools view -R ${CLEAN_BEDS}/${b}.chr1-22andX.sorted.bed.gz -O z -o "${dir}/${name}_${b}.vcf.gz" "${v}"
+        bcftools view -R ${PREPROCESSED_BEDS}/${b}.chr1-22andX.sorted.bed.gz -O z -o "${dir}/${name}_${b}.vcf.gz" "${v}"
         tabix -p vcf "${dir}/${name}_${b}.vcf.gz"
     done
 done
