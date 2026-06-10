@@ -1,0 +1,1 @@
+sarek --input samplesheet.csv -profile singularity -c <SAREK_HPC_CONFIG> --aligner sentieon-bwamem --nucleotides_per_second 300000 --tools "sentieon_dedup,sentieon_haplotyper"  --outdir results_final_sentieon_only_no_consensus2 --trim_fastq --split_fastq 200000000  --skip_tools baserecalibrator,haplotyper_filter --process.scratch /dev/shm
