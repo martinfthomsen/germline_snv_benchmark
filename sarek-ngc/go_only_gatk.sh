@@ -1,0 +1,1 @@
+sarek --input samplesheet.csv -profile singularity -c <SAREK_HPC_CONFIG> --aligner bwa-mem --nucleotides_per_second 100000 --tools "haplotypecaller"  --outdir results_final_gatk_only_bwa --trim_fastq --skip_tools baserecalibrator,haplotypecaller_filter --process.scratch /dev/shm

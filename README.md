@@ -12,3 +12,10 @@ Here you will find the description and associated code for the thruthset [prepro
 
 Here you will find the description and associated code for the SNV variant calling [benchmarking](./benchmarking/).
 
+### Variant calling configurations
+
+These folders hold the per-caller/per-infrastructure scripts used to generate the VCFs that are benchmarked:
+
+- [sentieon-ngc](./sentieon-ngc/) — Sentieon DNAscope (via `sentieon-cli`) on the NGC infrastructure.
+- [sarek-ngc](./sarek-ngc/) — nf-core/sarek (Sentieon and GATK tool configurations) on the NGC infrastructure.
+
