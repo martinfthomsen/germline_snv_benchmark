@@ -1,7 +1,7 @@
 # Parabricks variant calling (DCAI)
 
-This repository contains the workflows, and configuration files used to evaluate NVIDIA Parabricks on NVIDIA 
-DGX H100 systems. 
+This repository contains examples of the workflows, and configuration files used to evaluate NVIDIA Parabricks on NVIDIA 
+DGX H100 systems running on DCAI infrastructure.
 
 We evaluated the GPU-accelerated implementations developed by NVIDIA Clara Parabricks
 (NVIDIA Corporation) [40], focusing on the Parabricks fq2bam, HaplotypeCaller, and DeepVari-
