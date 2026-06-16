@@ -1,0 +1,8 @@
+patient,sample,lane,fastq_1,fastq_2
+P2209,NA12877,L001,/path/to/project/data/fastqs/2209.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2209.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2188,NA12878,L001,/path/to/project/data/fastqs/2188.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2188.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2216,NA12879,L001,/path/to/project/data/fastqs/2216.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2216.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2211,NA12881,L001,/path/to/project/data/fastqs/2211.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2211.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2212,NA12882,L001,/path/to/project/data/fastqs/2212.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2212.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2217,NA12885,L001,/path/to/project/data/fastqs/2217.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2217.v4.2.4.grc38_R2_nsorted.fastq.gz
+P2189,NA12886,L001,/path/to/project/data/fastqs/2189.v4.2.4.grc38_R1_nsorted.fastq.gz,/path/to/project/data/fastqs/2189.v4.2.4.grc38_R2_nsorted.fastq.gz
