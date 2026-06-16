@@ -18,4 +18,5 @@ These folders hold the per-caller/per-infrastructure scripts used to generate th
 
 - [sentieon-ngc](./sentieon-ngc/) — Sentieon DNAscope (via `sentieon-cli`) on the NGC infrastructure.
 - [sarek-ngc](./sarek-ngc/) — nf-core/sarek (Sentieon and GATK tool configurations) on the NGC infrastructure.
-
+- [parabricks-dcai](./parabricks-dcai/) — NVIDIA Clara Parabricks on the Gefion infrastructure.
+- [sarek-ngc](./sarek-dcai/) — nf-core/sarek (Sentieon and GATK tool configurations) on the Gefion infrastructure.
